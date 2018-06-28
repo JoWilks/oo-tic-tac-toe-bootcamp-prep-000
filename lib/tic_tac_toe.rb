@@ -72,7 +72,27 @@ WIN_COMBINATIONS = [
   end
   
   
-  
+  def won?()
+win_combo_length = WIN_COMBINATIONS.length - 1
+	for a in 0..win_combo_length
+	win_combo= WIN_COMBINATIONS[a]
+	check_board = []
+		for i in 0..2
+		check_board.push(@board[win_combo[i]])
+		i += 1
+		end
+			if check_board.all? { |elements| elements == "X"}
+				return win_combo
+			elsif check_board.all? { |elements| elements == "O"}
+				return win_combo 
+			end
+			a += 1
+	end
+	if @board.any? { |elements| elements != " "}
+  else
+    return false
+	end
+end
   
   
   
