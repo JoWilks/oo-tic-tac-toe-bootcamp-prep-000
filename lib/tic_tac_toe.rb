@@ -54,6 +54,17 @@ WIN_COMBINATIONS = [
   
   
   
+  def current_player(board)
+    move_count = turn_count(board)
+    if move_count % 2 == 0
+      "X"
+    else
+      "O"
+    end
+  end
+  
+  
+  
   
   
   
