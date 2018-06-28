@@ -110,11 +110,9 @@ end
   end
 end
   
- 
 def over?()
   won?() || draw?()
 end
-
 
 def winner()
   won_combo = won?()   
