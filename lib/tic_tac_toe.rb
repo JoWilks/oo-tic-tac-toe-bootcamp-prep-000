@@ -1,5 +1,16 @@
 class TicTacToe
 
+def play(board)
+  while !over?() 
+  turn()
+  end
+    if won?()
+    puts "Congratulations #{winner()}!"
+  elsif draw?()
+  puts "Cat's Game!"
+  end
+end
+
 WIN_COMBINATIONS = [ 
 [0,1,2], 
 [3,4,5], 
