@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
   end
 
   def input_to_index(user_input)
-    user_input.to_i - 1
+    @index = user_input.to_i - 1
   end
   
   def move(index, player_token)
@@ -34,7 +34,7 @@ WIN_COMBINATIONS = [
    !(@board[index].nil? || @board[index] == " ")
   end
   
-  def valid_move?(board,index)
+  def valid_move?(index)
     index.between?(0,8) && !position_taken?(index)
   end
   
