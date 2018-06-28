@@ -102,8 +102,8 @@ end
   end
 end
   
-  def draw?(board)
-  if won?(board).kind_of?(Array) == false && full?(board) == true
+  def draw?()
+  if won?().kind_of?(Array) == false && full?() == true
     return true
   else
     return false
