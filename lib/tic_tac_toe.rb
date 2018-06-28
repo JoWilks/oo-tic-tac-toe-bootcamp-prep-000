@@ -1,6 +1,6 @@
 class TicTacToe
 
-def play(board)
+def play()
   while !over?() 
   turn()
   end
