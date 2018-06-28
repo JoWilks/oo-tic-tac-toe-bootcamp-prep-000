@@ -94,7 +94,13 @@ win_combo_length = WIN_COMBINATIONS.length - 1
 	end
 end
   
-  
+  def full?()
+    if @board.any? { |markers| markers == " "}
+      return false
+    else 
+      return true
+  end
+end
   
   
 end
