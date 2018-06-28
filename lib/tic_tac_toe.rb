@@ -1,4 +1,4 @@
-class Tic_Tac_Toe
+class TicTacToe
 
 WIN_COMBINATIONS = [ 
 [0,1,2], 
