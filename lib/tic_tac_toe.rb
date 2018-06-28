@@ -110,4 +110,21 @@ end
   end
 end
   
+ 
+def over?()
+  won?() || draw?()
+end
+
+
+def winner()
+  won_combo = won?()   
+  if won?() == nil
+    return nil
+  elsif @board[won_combo[0]] == "X"
+    return "X"
+  elsif @board[won_combo[0]] == "O"
+    return "O"
+  end
+end 
+  
 end
